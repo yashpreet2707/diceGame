@@ -2,8 +2,9 @@ body {
     margin: 0 ;
     padding: 0 ;
     font-family: 'Foldit', cursive;
+    background-color: #000;
 }
-.background-video {
+/* .background-video {
     position: absolute;
     left: 0 ; top: 0 ;
     width: 100vw;
@@ -11,7 +12,7 @@ body {
     object-fit: cover;
     filter: brightness(30%);
     z-index: -1;
-}
+} */
 
 h1 {
     padding: 8vh 0 4vh;
