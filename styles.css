@@ -26,6 +26,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: wrap;
 }
 .container p {
     font-size: 35px;
@@ -33,4 +34,18 @@ h1 {
 }
 .container img {
     width: 250px;
+}
+
+@media screen and (min-width: 360px ) and (max-width: 740px ) {
+
+    .background-video {
+        height: 120vh;
+    }
+    h1 {
+        padding-top: 40px ;
+        font-size: 40px;
+    }
+    .container img {
+        width: 200px;
+    }
 }
