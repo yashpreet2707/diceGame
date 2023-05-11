@@ -1,38 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Game</title>
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- css file -->
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-        <img class="background-img" src="./background.avif" alt="">
+body {
+    margin: 0 ;
+    padding: 0 ;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+}
 
-        <h1>REFRESH ME</h1>
-        
-        <div class="container">
+.background-img {
+    position: absolute;
+    top: 0 ; left: 0 ;
+    width: 100vw ;
+    height: 110vh;
+    z-index: -1;
+    filter: brightness(30%);
+}
 
-
-            <div class="dice">
-                <p>Player 1</p>
-                <img class="img1" src="./images/6.png" >
-            </div>
-
-            <div class="dice">
-                <p>Player 2</p>
-                <img src="./images/6.png">
-            </div>
+h1 {
+    padding: 8vh 0 4vh;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+}
 
 
-    </div>
-    
-    <marquee>Made with ❤️ by Yashpreet Singh</marquee>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+.container p {
+    font-size: 35px;
+    text-align: center;
+    color: #fff ;
+}
+.container img {
+    width: 250px;
+}
 
-    <script src="./index.js"></script>
-</body>
-</html>
+marquee {
+    color: #fff;
+    padding-top: 100px;
+}
+
+@media screen and (min-width: 360px ) and (max-width: 740px ) {
+
+    .background-video {
+        height: 120vh;
+    }
+    h1 {
+        padding-top: 40px ;
+        font-size: 40px;
+    }
+    .container img {
+        width: 200px;
+    }
+    marquee {
+        padding: 20px 0 10px;
+    }
+}
