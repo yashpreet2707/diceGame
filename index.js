@@ -1,6 +1,9 @@
 
-var player1 = prompt("What is Player 1 name?");
-var player2 = prompt("What is Player 2 name?");
+var name1 = prompt("What is Player 1 name?");
+var name2 = prompt("What is Player 2 name?");
+
+player1 = ( name1.slice(0,1) ).toUpperCase() + ( name1.slice(1, name1.length) ).toLowerCase() 
+player2 = ( name2.slice(0,1) ).toUpperCase() + ( name2.slice(1, name2.length) ).toLowerCase() 
 
 document.querySelectorAll("p")[0].innerHTML = player1 ;
 document.querySelectorAll("p")[1].innerHTML = player2 ;
